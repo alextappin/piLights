@@ -31,6 +31,7 @@ var app = express();
 
 
 app.use(express.static('/home/pi/piLights/'));
+app.use(express.static('./.'));
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
