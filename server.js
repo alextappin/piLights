@@ -30,7 +30,6 @@ var spawn = require("child_process").spawn;
 var app = express();
 
 
-app.use(express.static('/home/pi/piLights/'));
 app.use(express.static('./.'));
 
 app.get('/', function (req, res) {
@@ -38,11 +37,11 @@ app.get('/', function (req, res) {
 });
 
 app.post('http://localhost:3000/on', function(req, res) {
-    var process = spawn('usr/bin/python',['on.py']);
+    var process = spawn('python',['on.py']);
     console.log('turn Onnnn');
 });
 app.post('/off', function(req, res) {
-    var process = spawn('usr/bin/python',['/home/pi/piLights.off.py']);
+    var process = spawn('python',['off.py']);
     console.log('turn Off');
 });
 
