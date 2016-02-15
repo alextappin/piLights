@@ -37,11 +37,11 @@ app.get('/', function (req, res) {
 });
 
 app.post('/on', function(req, res) {
-    var process = spawn('python',['on.py']);
+    var process = spawn('python',['/on.py']);
     console.log('turn Onnnn');
 });
 app.post('/off', function(req, res) {
-    var process = spawn('python',['off.py']);
+    var process = spawn('python',['/home/pi/piLights.off.py']);
     console.log('turn Off');
 });
 
