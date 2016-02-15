@@ -36,7 +36,7 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
 });
 
-app.post('http://localhost:3000/on', function(req, res) {
+app.post('/on', function(req, res) {
     var process = spawn('python',['on.py']);
     console.log('turn Onnnn');
 });
