@@ -9,7 +9,7 @@ app.controller('my-controller', function($scope, $q, $http, $location){
     $scope.turnOn = function() {
         var req = {
             method: 'POST',
-            url: 'http://localhost:3000/on'
+            url: 'http://10.0.0.16:3000/on'
         };
         $http(req);
         console.log("on");
