@@ -9,7 +9,7 @@ app.controller('my-controller', function($scope, $q, $http, $location){
     $scope.turnOn = function() {
         var req = {
             method: 'POST',
-            url: '10.0.0.16:3000/on'
+            url: 'http://localhost:3000/on'
         };
         $http(req);
         console.log("on");
@@ -18,7 +18,7 @@ app.controller('my-controller', function($scope, $q, $http, $location){
     $scope.turnOff = function() {
         var req = {
             method: 'POST',
-            url: '10.0.0.16:3000/off'
+            url: 'http://10.0.0.16:3000/off'
         };
         $http(req);
         console.log("off");
