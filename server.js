@@ -30,7 +30,7 @@ var spawn = require("child_process").spawn;
 var app = express();
 
 
-app.use(express.static('./'));
+app.use(express.static('/home/pi/piLights/'));
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
