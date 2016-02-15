@@ -1,0 +1,15 @@
+<!doctype html>
+<html ng-app='app'>
+<head>
+    <title>My Angular App</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-controller = 'my-controller'>
+<div class="container">
+    <button ng-click="turnOn()" class="btn btn-primary" style="width: 100%; height: 100px; font-size: 30px; margin: 20px 10px 20px 10px;">On</button>
+    <button ng-click="turnOff()" class="btn btn-danger" style="width: 100%; height: 100px; font-size: 30px;  margin: 20px 10px 20px 10px;">Off</button>
+</div> <!-- /container -->
+</body>
+</html>
