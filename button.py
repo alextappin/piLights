@@ -17,5 +17,5 @@ while True:
             print("GPIO pin on Light")
         else:
             subprocess.call(["python", "off.py"])
-            print("GPIO pin turn off light"
+            print("GPIO pin turn off light")
         time.sleep(0.1)
