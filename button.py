@@ -20,4 +20,4 @@ while True:
             subprocess.call(["python", "off.py"])
             stateOn = False
             print("GPIO pin turn off light")
-        time.sleep(0.1)
+        time.sleep(1)
