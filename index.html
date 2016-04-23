@@ -9,15 +9,16 @@
     <script src="app.js"></script>
 </head>
 <body ng-controller = 'my-controller' class="layout-default" style="zoom: 1">
-<section class="hero is-info is-large is-bold">
+<section class="hero is-info is-medium is-bold">
     <div class="hero-content has-text-centered">
-        <div class="container">
+        <div class="container" style="zoom: 2;">
             <h1 class="title">
                 PiLights
             </h1>
             <h2 class="subtitle">
                 Take Control of your Lights
             </h2>
+            <br>
             <h1 class="title">
                 <button ng-click="turnOn()" class="button is-success is-large"><i class="fa fa-sun-o"></i></button>
                 <button ng-click="turnOff()" class="button is-warning is-large"><i class="fa fa-moon-o"></i></button>
@@ -29,7 +30,7 @@
 <section class="hero is-medium is-bold is-left">
     <div class="hero-content">
         <div class="container">
-            <h1 class="title">
+            <h1 class="title" style="zoom: 1.2">
                 <i class="fa fa-clock-o fa-spin"></i>  Alarms
                 <br>
                 <br>
@@ -83,6 +84,13 @@
     .yellow {
         color: #fce473;
     }
+/*    .toggle-button {
+        padding: 40px 80px 110px 80px;
+    }
+    .toggle-button i {
+        font-size: 70px;
+        text-align: center;
+    }*/
 </style>
 
 </body>
